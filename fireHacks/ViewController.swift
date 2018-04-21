@@ -127,24 +127,8 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 organizations.append(organization)
             }
             self.organizations = organizations
-            
-            
-            
+
             for org in organizations{
-                //print(org.name)
-                
-//                let location = CLLocationCoordinate2D.init(latitude: org.locationInfo.latitude, longitude: org.locationInfo.longitude)
-//
-//                let annotation = MKPointAnnotation()
-//                annotation.coordinate = location
-//                annotation.title = org.name
-//                annotation.subtitle = ""
-                
-//                let annotationView = MKPinAnnotationView()
-//                annotationView.pinTintColor = .blue
-//                annotationView.annotation = annotation
-                
-               // self.orgArray.append(annotation)
                 self.mapView.addAnnotation(org)
             }
         })
@@ -160,25 +144,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 shelters.append(shelter)
             }
             self.shelters = shelters
-            // update annotations
-            
 
-//
+            
             for s in self.shelters!{
-//                //print(org.name)
-//                let location = CLLocationCoordinate2D.init(latitude: s.latitude, longitude: s.longitude)
-//
-//                let annotation = MKPointAnnotation()
-//
-//                annotation.coordinate = location
-//                annotation.title = s.name
-//                annotation.subtitle = ""
-//
-//                let annotationView = MKPinAnnotationView()
-//                annotationView.pinTintColor = .red
-//                annotationView.annotation = annotation
-                
-                //self.shelterArray.append(annotation)
+
                 self.mapView.addAnnotation(s)
                 
             }
@@ -192,7 +161,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "newPin"{
-           // let destVC = segue.destination as! NewPinViewController
+            let destVC = segue.destination as! NewPinViewController
         }
     }
     

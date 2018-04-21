@@ -11,10 +11,14 @@ import UIKit
 class NewPinViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
+
+    @IBOutlet weak var titleLabel: UILabel!
+    var titleLabel: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
