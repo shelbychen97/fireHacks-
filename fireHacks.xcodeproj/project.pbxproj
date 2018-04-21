@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ACE7ACAFA9F851CE560BF00 /* Pods_fireHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA1B1DFE68AAE41B67B8B1A /* Pods_fireHacks.framework */; };
 		5ABBBD17208AFC4E00F983F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBBD16208AFC4E00F983F1 /* AppDelegate.swift */; };
 		5ABBBD19208AFC4E00F983F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBBD18208AFC4E00F983F1 /* ViewController.swift */; };
 		5ABBBD1C208AFC4E00F983F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABBBD1A208AFC4E00F983F1 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		5ABBBD21208AFC5000F983F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABBBD1F208AFC5000F983F1 /* LaunchScreen.storyboard */; };
 		5ABBBD2C208AFC5000F983F1 /* fireHacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBBD2B208AFC5000F983F1 /* fireHacksTests.swift */; };
 		5ABBBD37208B002C00F983F1 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBBD36208B002C00F983F1 /* Classes.swift */; };
+		5ABBBD39208B0B9400F983F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ABBBD38208B0B9400F983F1 /* GoogleService-Info.plist */; };
+		8A2D4F0C02AD2A1D4D09FEB7 /* Pods_fireHacksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC0611C8839D9F6B298DFFE /* Pods_fireHacksTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1376182DE21EE6C6EC6F98A7 /* Pods-fireHacksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fireHacksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fireHacksTests/Pods-fireHacksTests.release.xcconfig"; sourceTree = "<group>"; };
+		521972CD76927E18E4B40AFB /* Pods-fireHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fireHacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-fireHacks/Pods-fireHacks.release.xcconfig"; sourceTree = "<group>"; };
 		5ABBBD13208AFC4E00F983F1 /* fireHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fireHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABBBD16208AFC4E00F983F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ABBBD18208AFC4E00F983F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +43,11 @@
 		5ABBBD2B208AFC5000F983F1 /* fireHacksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fireHacksTests.swift; sourceTree = "<group>"; };
 		5ABBBD2D208AFC5000F983F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ABBBD36208B002C00F983F1 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		5ABBBD38208B0B9400F983F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7E90E69F55358D96E849796C /* Pods-fireHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fireHacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fireHacks/Pods-fireHacks.debug.xcconfig"; sourceTree = "<group>"; };
+		9BA1B1DFE68AAE41B67B8B1A /* Pods_fireHacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fireHacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BA2854B273CB33893B1B1B /* Pods-fireHacksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fireHacksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fireHacksTests/Pods-fireHacksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAC0611C8839D9F6B298DFFE /* Pods_fireHacksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fireHacksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ACE7ACAFA9F851CE560BF00 /* Pods_fireHacks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2D4F0C02AD2A1D4D09FEB7 /* Pods_fireHacksTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +76,8 @@
 				5ABBBD15208AFC4E00F983F1 /* fireHacks */,
 				5ABBBD2A208AFC5000F983F1 /* fireHacksTests */,
 				5ABBBD14208AFC4E00F983F1 /* Products */,
+				A73082ED6FA208CB7098ACB7 /* Pods */,
+				CEE594487377B2397C86403F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +100,7 @@
 				5ABBBD1D208AFC5000F983F1 /* Assets.xcassets */,
 				5ABBBD1F208AFC5000F983F1 /* LaunchScreen.storyboard */,
 				5ABBBD22208AFC5000F983F1 /* Info.plist */,
+				5ABBBD38208B0B9400F983F1 /* GoogleService-Info.plist */,
 			);
 			path = fireHacks;
 			sourceTree = "<group>";
@@ -99,6 +114,26 @@
 			path = fireHacksTests;
 			sourceTree = "<group>";
 		};
+		A73082ED6FA208CB7098ACB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E90E69F55358D96E849796C /* Pods-fireHacks.debug.xcconfig */,
+				521972CD76927E18E4B40AFB /* Pods-fireHacks.release.xcconfig */,
+				F9BA2854B273CB33893B1B1B /* Pods-fireHacksTests.debug.xcconfig */,
+				1376182DE21EE6C6EC6F98A7 /* Pods-fireHacksTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CEE594487377B2397C86403F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BA1B1DFE68AAE41B67B8B1A /* Pods_fireHacks.framework */,
+				FAC0611C8839D9F6B298DFFE /* Pods_fireHacksTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5ABBBD30208AFC5000F983F1 /* Build configuration list for PBXNativeTarget "fireHacks" */;
 			buildPhases = (
+				CF3C9B7AA76751A1424E1ED2 /* [CP] Check Pods Manifest.lock */,
 				5ABBBD0F208AFC4E00F983F1 /* Sources */,
 				5ABBBD10208AFC4E00F983F1 /* Frameworks */,
 				5ABBBD11208AFC4E00F983F1 /* Resources */,
+				C1B189B9D12E5533FD65E33F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5ABBBD33208AFC5000F983F1 /* Build configuration list for PBXNativeTarget "fireHacksTests" */;
 			buildPhases = (
+				3584EA4AF987E718FBDF824B /* [CP] Check Pods Manifest.lock */,
 				5ABBBD23208AFC5000F983F1 /* Sources */,
 				5ABBBD24208AFC5000F983F1 /* Frameworks */,
 				5ABBBD25208AFC5000F983F1 /* Resources */,
@@ -183,6 +221,7 @@
 				5ABBBD21208AFC5000F983F1 /* LaunchScreen.storyboard in Resources */,
 				5ABBBD1E208AFC5000F983F1 /* Assets.xcassets in Resources */,
 				5ABBBD1C208AFC4E00F983F1 /* Main.storyboard in Resources */,
+				5ABBBD39208B0B9400F983F1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +233,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3584EA4AF987E718FBDF824B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fireHacksTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1B189B9D12E5533FD65E33F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fireHacks/Pods-fireHacks-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fireHacks/Pods-fireHacks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF3C9B7AA76751A1424E1ED2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fireHacks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5ABBBD0F208AFC4E00F983F1 /* Sources */ = {
@@ -360,6 +458,7 @@
 		};
 		5ABBBD31208AFC5000F983F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E90E69F55358D96E849796C /* Pods-fireHacks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +477,7 @@
 		};
 		5ABBBD32208AFC5000F983F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521972CD76927E18E4B40AFB /* Pods-fireHacks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +496,7 @@
 		};
 		5ABBBD34208AFC5000F983F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9BA2854B273CB33893B1B1B /* Pods-fireHacksTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -416,6 +517,7 @@
 		};
 		5ABBBD35208AFC5000F983F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1376182DE21EE6C6EC6F98A7 /* Pods-fireHacksTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

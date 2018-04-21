@@ -10,24 +10,24 @@ import Foundation
 import CoreLocation
 
 class Organization{
-    var name: String
-    var locations: [LocationInfo]
+    var name: String!
+    var locations: [LocationInfo]!
     var neededItems: [NeededItem]?
-    var website: String
+    var website: String!
     
-    init(name: String, locations: [LocationInfo], neededItems: [NeededItem], website: String) {
-        
-    }
+//    init(name: String, locations: [LocationInfo], neededItems: [NeededItem],website: String) {
+//
+//    }
 }
 
 
 class LocationInfo {
-    var coordinates: CLLocationCoordinate2D
-    var address: String
-    var description: String
+    var coordinates: CLLocationCoordinate2D!
+    var address: String = ""
+    var description: String = ""
 }
 
 class NeededItem {
-    var name: String
-    var quantity: Int
+    var name: String = ""
+    var quantity: Int = 0
 }
