@@ -12,36 +12,36 @@ import Foundation
 class PulsePointFunctionalities {
     var incidentData: Incident?
     
-    func getRecentAndActiveIncidents() {
-        let username = "slohack18"
-        let password = "GBL93bRzSS"
-        //let APIKey = "MsfWUGVgFVdVyr85zS5AMRccmj0FOn3pGbqJWwe"
-        let urlString = "https://api.pulsepoint.org/v1-sandbox/incidents?apikey=MsfWUGVgFVdVyr85zS5AMRccmj0FOn3pGbqJWwe&agencyid=77001&both=1"
-        let loginString = String(format: "%@:%@", username, password)
-        let loginData = loginString.data(using: .utf8)
-        let base64LoginString = loginData!.base64EncodedString()
-        
-        //create request
-        let url = URL(string: urlString)
-        var urlRequest = URLRequest(url: url!)
-        urlRequest.httpMethod = "GET"
-        urlRequest.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
-        
-        let urlSession = URLSession.shared.dataTask(with: urlRequest) {(data, response, error) in
-            //let returnString = String.init(data: data!, encoding: String.Encoding.utf8)
-            //self.incidentData = Incident(initData: (returnString! as! [String: Any])["incident"] as! [String : Any])
-            
-            do {
-                let incidentData = try JSONSerialization.jsonObject(with: data!, options: []) as! [String : Any]
-                self.incidentData = Incident(initData: incidentData["incidents"] as! [String: Any])
-            } catch {
-                print(error.localizedDescription)
-            }
-            
-            print (self.incidentData)
-        }
-        urlSession.resume()
-    }
+//    func getRecentAndActiveIncidents() {
+//        let username = "slohack18"
+//        let password = "GBL93bRzSS"
+//        //let APIKey = "MsfWUGVgFVdVyr85zS5AMRccmj0FOn3pGbqJWwe"
+//        let urlString = "https://api.pulsepoint.org/v1-sandbox/incidents?apikey=MsfWUGVgFVdVyr85zS5AMRccmj0FOn3pGbqJWwe&agencyid=77001&both=1"
+//        let loginString = String(format: "%@:%@", username, password)
+//        let loginData = loginString.data(using: .utf8)
+//        let base64LoginString = loginData!.base64EncodedString()
+//        
+//        //create request
+//        let url = URL(string: urlString)
+//        var urlRequest = URLRequest(url: url!)
+//        urlRequest.httpMethod = "GET"
+//        urlRequest.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
+//        
+//        let urlSession = URLSession.shared.dataTask(with: urlRequest) {(data, response, error) in
+//            //let returnString = String.init(data: data!, encoding: String.Encoding.utf8)
+//            //self.incidentData = Incident(initData: (returnString! as! [String: Any])["incident"] as! [String : Any])
+//            
+//            do {
+//                let incidentData = try JSONSerialization.jsonObject(with: data!, options: []) as! [String : Any]
+//                self.incidentData = Incident(initData: incidentData["incidents"] as! [String: Any])
+//            } catch {
+//                print(error.localizedDescription)
+//            }
+//            
+//            print (self.incidentData)
+//        }
+//        urlSession.resume()
+//    }
     
 }
 

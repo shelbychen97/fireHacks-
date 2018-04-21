@@ -19,6 +19,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var menuView: UIView!
     @IBOutlet weak var blurView: UIVisualEffectView!
+   
     @IBAction func donationSwitch(_ sender: UISwitch) {
         showOrg = !showOrg
         updatePins()
@@ -132,19 +133,19 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             for org in organizations{
                 //print(org.name)
                 
-                let location = CLLocationCoordinate2D.init(latitude: org.locationInfo.latitude, longitude: org.locationInfo.longitude)
+//                let location = CLLocationCoordinate2D.init(latitude: org.locationInfo.latitude, longitude: org.locationInfo.longitude)
+//
+//                let annotation = MKPointAnnotation()
+//                annotation.coordinate = location
+//                annotation.title = org.name
+//                annotation.subtitle = ""
                 
-                let annotation = MKPointAnnotation()
-                annotation.coordinate = location
-                annotation.title = org.name
-                annotation.subtitle = ""
-                
-                let annotationView = MKPinAnnotationView()
-                annotationView.pinTintColor = .blue
-                annotationView.annotation = annotation
+//                let annotationView = MKPinAnnotationView()
+//                annotationView.pinTintColor = .blue
+//                annotationView.annotation = annotation
                 
                // self.orgArray.append(annotation)
-                self.mapView.addAnnotation(annotation)
+                self.mapView.addAnnotation(org)
             }
         })
     }
@@ -164,21 +165,21 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
 
 //
             for s in self.shelters!{
-                //print(org.name)
-                let location = CLLocationCoordinate2D.init(latitude: s.latitude, longitude: s.longitude)
-                
-                let annotation = MKPointAnnotation()
-                
-                annotation.coordinate = location
-                annotation.title = s.name
-                annotation.subtitle = ""
-                
-                let annotationView = MKPinAnnotationView()
-                annotationView.pinTintColor = .red
-                annotationView.annotation = annotation
+//                //print(org.name)
+//                let location = CLLocationCoordinate2D.init(latitude: s.latitude, longitude: s.longitude)
+//
+//                let annotation = MKPointAnnotation()
+//
+//                annotation.coordinate = location
+//                annotation.title = s.name
+//                annotation.subtitle = ""
+//
+//                let annotationView = MKPinAnnotationView()
+//                annotationView.pinTintColor = .red
+//                annotationView.annotation = annotation
                 
                 //self.shelterArray.append(annotation)
-                self.mapView.addAnnotation(annotation)
+                self.mapView.addAnnotation(s)
                 
             }
         })
@@ -216,28 +217,31 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         })
     }
     
-//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//        if annotation is Organization {
-//            let annotationView = MKPinAnnotationView()
-//            annotationView.pinTintColor = .red
-//            annotationView.pinTintColor = UIColor(colorWithHexValue: 0xFF6F59)
-//            annotationView.annotation = annotation
-//            annotationView.canShowCallout = true
-//            annotationView.animatesDrop = true
-//
-//            return annotationView
-//        }
-//        if annotation is Shelter {
-//            let annotationView = MKPinAnnotationView()
-//            annotationView.pinTintColor = UIColor(colorWithHexValue: 0x43AAB8)
-//            annotationView.annotation = annotation
-//            annotationView.canShowCallout = true
-//            annotationView.animatesDrop = true
-//
-//            return annotationView
-//        }
-//        return nil
-//    }
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is Organization {
+            let annotationView = MKPinAnnotationView()
+            annotationView.pinTintColor = .red
+            annotationView.pinTintColor = UIColor(colorWithHexValue: 0xFF6F59)
+            annotationView.annotation = annotation
+            annotationView.canShowCallout = true
+            annotationView.animatesDrop = true
+            
+            //annotationView.image = UIImage.init(named: "blah.png")
+            
+
+            return annotationView
+        }
+        if annotation is Shelter {
+            let annotationView = MKPinAnnotationView()
+            annotationView.pinTintColor = UIColor(colorWithHexValue: 0x43AAB8)
+            annotationView.annotation = annotation
+            annotationView.canShowCallout = true
+            annotationView.animatesDrop = true
+            //annotationView.image = UIImage.init(named: "blah.png")
+            return annotationView
+        }
+        return nil
+    }
     
 }
 
