@@ -11,6 +11,7 @@
 		5A703D1F208BA9870022F230 /* NewPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A703D1E208BA9870022F230 /* NewPinViewController.swift */; };
 		5A703D21208BB3380022F230 /* FirebaseFunctionalities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A703D20208BB3380022F230 /* FirebaseFunctionalities.swift */; };
 		5A703D23208BB4020022F230 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A703D22208BB4020022F230 /* Classes.swift */; };
+		5A703D25208BEAD30022F230 /* PulsePointFunctionalities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A703D24208BEAD30022F230 /* PulsePointFunctionalities.swift */; };
 		5ABBBD17208AFC4E00F983F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBBD16208AFC4E00F983F1 /* AppDelegate.swift */; };
 		5ABBBD19208AFC4E00F983F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBBD18208AFC4E00F983F1 /* ViewController.swift */; };
 		5ABBBD1C208AFC4E00F983F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABBBD1A208AFC4E00F983F1 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		5A703D1E208BA9870022F230 /* NewPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPinViewController.swift; sourceTree = "<group>"; };
 		5A703D20208BB3380022F230 /* FirebaseFunctionalities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseFunctionalities.swift; sourceTree = "<group>"; };
 		5A703D22208BB4020022F230 /* Classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Classes.swift; path = ../../../../../var/folders/gn/d57q5g_n1ms7p9qdz8sfpnpc0000gn/T/com.apple.iChat/Messages/Transfers/Classes.swift; sourceTree = "<group>"; };
+		5A703D24208BEAD30022F230 /* PulsePointFunctionalities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulsePointFunctionalities.swift; sourceTree = "<group>"; };
 		5ABBBD13208AFC4E00F983F1 /* fireHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fireHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABBBD16208AFC4E00F983F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ABBBD18208AFC4E00F983F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				5ABBBD1A208AFC4E00F983F1 /* Main.storyboard */,
 				5A703D1E208BA9870022F230 /* NewPinViewController.swift */,
 				5A703D20208BB3380022F230 /* FirebaseFunctionalities.swift */,
+				5A703D24208BEAD30022F230 /* PulsePointFunctionalities.swift */,
 				5ABBBD1D208AFC5000F983F1 /* Assets.xcassets */,
 				5ABBBD1F208AFC5000F983F1 /* LaunchScreen.storyboard */,
 				5ABBBD22208AFC5000F983F1 /* Info.plist */,
@@ -312,6 +315,7 @@
 				5A703D23208BB4020022F230 /* Classes.swift in Sources */,
 				5A703D1F208BA9870022F230 /* NewPinViewController.swift in Sources */,
 				5ABBBD19208AFC4E00F983F1 /* ViewController.swift in Sources */,
+				5A703D25208BEAD30022F230 /* PulsePointFunctionalities.swift in Sources */,
 				5ABBBD17208AFC4E00F983F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

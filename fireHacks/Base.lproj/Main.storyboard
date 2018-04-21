@@ -38,21 +38,50 @@
                                                     <rect key="frame" x="290" y="30" width="51" height="31"/>
                                                     <color key="tintColor" red="1" green="0.82083034020000001" blue="0.080109397230000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <connections>
-                                                        <action selector="orgSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="O5s-XV-bAq"/>
+                                                        <action selector="donationSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="cnA-5W-TJH"/>
                                                     </connections>
                                                 </switch>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="khk-Ug-lnw">
                                                     <rect key="frame" x="290" y="90" width="51" height="31"/>
                                                     <connections>
-                                                        <action selector="fireSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="YDh-5E-11C"/>
+                                                        <action selector="shelterSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="hb4-Pw-MvS"/>
                                                     </connections>
                                                 </switch>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w85-Ms-VTH">
+                                                    <rect key="frame" x="288" y="155" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="hazardSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="FkN-bU-146"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donation Centers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWF-jH-JsN">
+                                                    <rect key="frame" x="41" y="35" width="191" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shelter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKP-k4-Twb">
+                                                    <rect key="frame" x="41" y="95" width="191" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hazards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nc-Ue-d5E">
+                                                    <rect key="frame" x="41" y="160" width="191" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="khk-Ug-lnw" firstAttribute="top" secondItem="QTy-SE-h07" secondAttribute="bottom" constant="29" id="Nl1-aT-nAY"/>
+                                                <constraint firstAttribute="bottom" secondItem="w85-Ms-VTH" secondAttribute="bottom" constant="155" id="ZJi-fC-9bz"/>
                                                 <constraint firstAttribute="bottom" secondItem="khk-Ug-lnw" secondAttribute="bottom" constant="220" id="csy-mG-FaT"/>
                                                 <constraint firstAttribute="trailing" secondItem="khk-Ug-lnw" secondAttribute="trailing" constant="36" id="jOQ-3a-LdP"/>
                                                 <constraint firstAttribute="trailing" secondItem="QTy-SE-h07" secondAttribute="trailing" constant="36" id="pu4-BP-y7t"/>
+                                                <constraint firstAttribute="trailing" secondItem="w85-Ms-VTH" secondAttribute="trailing" constant="38" id="w90-2w-yYs"/>
                                             </constraints>
                                         </view>
                                         <blurEffect style="light"/>
