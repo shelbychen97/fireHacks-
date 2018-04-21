@@ -7,7 +7,10 @@ target 'fireHacks' do
 
   # Pods for fireHacks
  
+  pod 'Firebase'
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'GeoFire', :git => 'https://github.com/firebase/geofire-objc.git'
 
   target 'fireHacksTests' do
     inherit! :search_paths

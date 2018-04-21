@@ -17,8 +17,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var menuView: UIView!
+    @IBOutlet weak var blurView: UIVisualEffectView!
+    
     @IBAction func menuButton(_ sender: UIButton) {
-        menuView.isHidden = true
+        menuView.isHidden = !menuView.isHidden
     }
     
     
@@ -26,6 +28,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        blurView.layer.cornerRadius = 15
+        
         menuView.isHidden = false
         
         self.mapView.delegate = self
